@@ -236,7 +236,11 @@
 						<Property Name="configString.name" Type="Str">40 MHz Onboard ClockResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;Connector0/DIOPORT0ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Connector0/DIOPORT0;0;ReadMethodType=u8;WriteMethodType=u8Connector0/DIOPORT1ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Connector0/DIOPORT1;0;ReadMethodType=u8;WriteMethodType=u8Connector0/DIOPORT2ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Connector0/DIOPORT2;0;ReadMethodType=u8;WriteMethodType=u8Connector0/DIOPORT3ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Connector0/DIOPORT3;0;ReadMethodType=u8;WriteMethodType=u8PXIe-7822R/Clk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_7822RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin]rseries.dio./Connector0=0,rseries.dio./Connector1=0,rseries.dio./Connector2=0,rseries.dio./Connector3=0[rSeriesConfig.End]</Property>
 						<Property Name="NI.LV.FPGA.InterfaceBitfile" Type="Str">C:\Git\VeriStand\niveristand-custom-device-testing-tools\Loopback\Loopback_FPGATarget_Loopback_3S22y2ZVP64.lvbitx</Property>
 					</Item>
-					<Item Name="Dependencies" Type="Dependencies"/>
+					<Item Name="Dependencies" Type="Dependencies">
+						<Item Name="vi.lib" Type="Folder">
+							<Item Name="lvSimController.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/Simulation/lvSimController.dll"/>
+						</Item>
+					</Item>
 					<Item Name="Build Specifications" Type="Build">
 						<Item Name="Loopback" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
 							<Property Name="AllowEnableRemoval" Type="Bool">false</Property>
